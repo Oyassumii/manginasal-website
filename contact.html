@@ -167,33 +167,66 @@
     .contact-form button:hover {
       background: #b33a0f;
     }
+@media (max-width: 767px) {
+  header {
+    position: relative;
+  }
 
-    @media (max-width: 900px) {
-      .contact-container {
-        flex-direction: column;
-      }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
 
-      .contact-info,
-      .contact-form {
-        flex: 1 1 100%;
-      }
+  .logo {
+    flex-direction: column;
+    gap: 5px;
+  }
 
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+  .logo img {
+    height: 55px;
+  }
 
-      .nav-links {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        padding-top: 10px;
-      }
+  .logo span {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
 
-      .nav-links li a {
-        display: block;
-      }
-    }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .nav-links li a {
+    display: block;
+    font-size: 1.05rem;
+  }
+
+  .contact {
+    padding: 120px 5% 60px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-info, .contact-form {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .contact h2 {
+    font-size: 2em;
+  }
+
+  .contact p {
+    font-size: 1em;
+  }
+}  
   </style>
 </head>
 <body>
@@ -241,4 +274,5 @@
     </div>
   </section>
 </body>
+
 </html>
